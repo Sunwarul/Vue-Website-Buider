@@ -1,0 +1,39 @@
+//@import "cdn_imports";
+@import "local_imports";
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import '~@coreui/icons/css/free.min.css';
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+@import './../assets/scss/style';
+//@import "themes/dark.scss";
+@import "themes/blue.scss";
+
+body, html {
+
+
+    ::-webkit-scrollbar {
+        /*display: none; // Safari and Chrome*/
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #168ab1;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+    }
+
+    ::-webkit-scrollbar-track, scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #c3d8e7;
+    }
+
+    .modal-fullscreen {
+        .modal-dialog {
+            max-width: 100%;
+
+            .modal-content {
+                min-height: 90vh;
+            }
+        }
+    }
+}

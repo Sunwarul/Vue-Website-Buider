@@ -1,0 +1,131 @@
+// Here you can add other styles
+
+//background: #2a3c4e;
+$border-color: #23282c;
+$background-color: #2f353a;
+$body-background-color: #2a3c4e;
+$active-background-color: #171717;
+$text-color: white;
+body {
+    background: $body-background-color;
+    /*background: #2f353a;*/
+
+
+    .app-header {
+
+        background: $background-color;
+        border-bottom: 1px solid $border-color;
+
+        .navbar-toggler-icon {
+            color: $text-color;
+            background-image: url('data:image/svg+xml;charset=utf8;base64,PHN2ZyB2aWV3Qm94PScwIDAgMzAgMzAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggc3Ryb2tlPScjYzhjZWQzJyBzdHJva2Utd2lkdGg9JzIuMjUnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLW1pdGVybGltaXQ9JzEwJyBkPSdNNCA3aDIyTTQgMTVoMjJNNCAyM2gyMicvPjwvc3ZnPg==') !important;
+        }
+
+        .navbar-brand {
+            color: $text-color;
+        }
+    }
+
+    .app-header > .navbar-nav > .nav-item > a {
+        color: $text-color;
+    }
+
+    .breadcrumb {
+        border-bottom: 1px solid $border-color;
+        background-color: $background-color;
+
+        .breadcrumb-item {
+            .active {
+                color: $text-color;
+            }
+        }
+    }
+
+    .app-body {
+        .sidebar {
+            background-color: $background-color;
+            border-right: 1px solid $border-color;
+            color: #f3f4f5;
+
+            .router-link-exact-active {
+                border-right: 1px solid $border-color;
+            }
+
+            .nav-dropdown.open {
+                .nav-link {
+                    color: #fff;
+                    border-right: 1px solid $border-color;
+                }
+            }
+
+            .nav-dropdown-items {
+                .nav-item {
+                    border-right: $border-color;
+                }
+            }
+
+            .sidebar-minimizer {
+                background-color: $background-color;
+            }
+
+            .sidebar-minimizer:hover {
+                background-color: $body-background-color;
+            }
+        }
+
+        .aside-menu {
+            border-left: 1px solid $border-color;
+
+            .tabs {
+                .nav-tabs {
+                    background: $background-color;
+                    border-bottom: 1px solid $border-color;
+
+                    .nav-link {
+                        color: $text-color;
+                        border: 1px solid $background-color;
+                    }
+
+                    .nav-link:hover {
+                        border: 1px solid $border-color;
+                    }
+
+                    .nav-link.active {
+                        color: $text-color;
+                        border-right-color: $border-color;
+                        background: $active-background-color;
+                    }
+
+                    .presentation {
+                        .nav-item {
+                            a {
+                                background: $background-color;
+
+                                i {
+                                    color: $border-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tab-content {
+                    background: $background-color;
+                    border-top: 1px solid $border-color;
+                    color: $text-color;
+
+                    a.list-group-item-action {
+                        background: content-box;
+                    }
+                }
+            }
+        }
+    }
+
+    .app-footer {
+        /*background: #1f2c39;*/
+        background: $background-color;
+        color: $text-color;
+        border-top: 1px solid $border-color;
+    }
+}

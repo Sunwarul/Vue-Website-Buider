@@ -1,0 +1,10 @@
+html, body {
+    height: 100vh;
+}
+.container {
+    margin: 0;
+    font-family: sans-serif;
+}
+.title {
+    font-family: monospace;
+}
